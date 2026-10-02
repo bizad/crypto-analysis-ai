@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="fa" dir="rtl" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      // Defensive guard against browser crypto wallet extensions (MetaMask, Rabby, Coinbase, etc.)
+      // attempting to redefine window.ethereum and throwing 'Cannot redefine property: ethereum'
+      (function() {
+        try {
+          const originalDefineProperty = Object.defineProperty;
+          Object.defineProperty = function(target, prop, descriptor) {
+            if ((target === window || target === globalThis) && prop === 'ethereum') {
+              try {
+                return originalDefineProperty.call(Object, target, prop, {
+                  ...descriptor,
+                  configurable: true,
+                  writable: true,
+                });
+              } catch (e) {
+                // Silently return target if duplicate non-configurable definition is attempted
+                return target;
+              }
+            }
+            return originalDefineProperty.call(Object, target, prop, descriptor);
+          };
+
+          window.addEventListener('error', function(event) {
+            if (event && event.message && typeof event.message === 'string' && event.message.includes('ethereum')) {
+              event.stopImmediatePropagation();
+              event.preventDefault();
+              return true;
+            }
+          }, true);
+        } catch (err) {
+          // noop
+        }
+      })();
+    </script>
+    <title>Crypto Technical Analysis & AI Trading Bot</title>
+    <meta name="description" content="پلتفرم پیشرفته تحلیل تکنیکال و فاندامنتال ارزهای دیجیتال طراحی و توسعه‌یافته توسط حامد فرّی با داده‌های لحظه‌ای APIهای معتبر جهانی و هوش مصنوعی" />
+    <meta property="og:title" content="Crypto Technical Analysis & AI Trading Bot" />
+    <meta property="og:description" content="پلتفرم پیشرفته تحلیل تکنیکال و فاندامنتال ارزهای دیجیتال طراحی و توسعه‌یافته توسط حامد فرّی با داده‌های لحظه‌ای APIهای معتبر جهانی و هوش مصنوعی" />
+    <meta name="author" content="حامد فرّی - Hamed Farri" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-emerald-500/30 selection:text-emerald-300">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

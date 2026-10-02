@@ -1,0 +1,390 @@
+{
+  "users": [
+    {
+      "id": "user_admin_hamed",
+      "name": "حامد فرّی (مدیر کل و توسعه‌دهنده)",
+      "email": "hamed.farri@gmail.com",
+      "phone": "09121234567",
+      "password": "d61cec7d8356e412b9659a026206525e:2f8db434dcc0c656294776fd3014efd74591731c805324ecfafbbeb359ae98c6c79e09831334c65bd69e8f55bc6a0eaa374a55a965e2e5ca09fdd9cc73fb6321",
+      "referralCode": "HAMED2026",
+      "referralCount": 14,
+      "weeklyBonusQuota": 14,
+      "usedWeeklyQuota": 2,
+      "rewardBalanceUsdt": 42.5,
+      "totalEarnedUsdt": 125,
+      "bep20Address": "0x71C836e4f3AbC822295E4F28f7dF7B9889617277",
+      "isVip": true,
+      "vipPlan": "annual",
+      "vipExpiresAt": 1821353676612,
+      "createdAt": 1787225676612
+    },
+    {
+      "id": "user_trader_1",
+      "name": "علیرضا رضایی",
+      "phone": "09198765432",
+      "email": "alireza.crypto@gmail.com",
+      "password": "db8222b1729cdb9f3cd207bfa59028c5:f437fbc37c56d831527961e83bd6cd679a4f20d4bffdf072e0cb35b2a30b79dea3af83d455a9cdd9872fd8dfd1fd5c3fa54e0ffd30d64b37986ccbf4bf296104",
+      "referralCode": "ALI-882",
+      "referredBy": "HAMED2026",
+      "referralCount": 3,
+      "weeklyBonusQuota": 3,
+      "usedWeeklyQuota": 1,
+      "rewardBalanceUsdt": 15.8,
+      "totalEarnedUsdt": 15.8,
+      "isVip": true,
+      "vipPlan": "monthly",
+      "vipExpiresAt": 1791372876612,
+      "createdAt": 1788780876612
+    },
+    {
+      "id": "user_trader_2",
+      "name": "سارا محمدی",
+      "phone": "09351112233",
+      "email": "sara.m@yahoo.com",
+      "password": "884d86c5b4f221c25e6980429d5b71a0:cb25f7a687c76803070104645bc7c20352e1362e382ea89a59d42e1fedb29e28a7f8d355fc4cc814db9d0f2bf6ffb138c81794a62a08ca784840a5ec3dbd74f1",
+      "referralCode": "SARA-501",
+      "referredBy": "HAMED2026",
+      "referralCount": 1,
+      "weeklyBonusQuota": 1,
+      "usedWeeklyQuota": 0,
+      "rewardBalanceUsdt": 0,
+      "totalEarnedUsdt": 0,
+      "isVip": false,
+      "createdAt": 1789385676612
+    }
+  ],
+  "deposits": [
+    {
+      "id": "dep_1001",
+      "userId": "user_trader_1",
+      "userIdentifier": "09198765432",
+      "amount": 29,
+      "currency": "USDT",
+      "planId": "monthly",
+      "planName": "اشتراک ماهانه VIP (۳۰ روز)",
+      "txid": "0x4f8a912b740ef88219cda44b02e9a557",
+      "status": "APPROVED",
+      "createdAt": 1788780876612,
+      "reviewedAt": 1788784476612
+    },
+    {
+      "id": "dep_1002",
+      "userId": "user_trader_2",
+      "userIdentifier": "09351112233",
+      "amount": 1450000,
+      "currency": "TOMAN",
+      "planId": "weekly",
+      "planName": "اشتراک هفتگی VIP (۷ روز)",
+      "txid": "واریز کارت‌به‌کارت - شماره پیگیری ۷۸۲۶۴۱",
+      "status": "PENDING",
+      "createdAt": 1789803276612
+    }
+  ],
+  "tickets": [
+    {
+      "id": "ticket_201",
+      "userId": "user_trader_1",
+      "userIdentifier": "alireza.crypto@gmail.com",
+      "subject": "پرسش درباره اندیکاتورهای تایم‌فریم ۴ ساعته",
+      "department": "پشتیبانی فنی",
+      "status": "ANSWERED",
+      "createdAt": 1789644876612,
+      "updatedAt": 1789731276612,
+      "messages": [
+        {
+          "id": "msg_1",
+          "sender": "user",
+          "text": "سلام و خسته نباشید، آیا امکان اضافه کردن تایم‌فریم‌های روزانه بیشتر هم در آپدیت‌های آینده هست؟ با تشکر از اپلیکیشن عالی‌تون.",
+          "createdAt": 1789644876612
+        },
+        {
+          "id": "msg_2",
+          "sender": "admin",
+          "text": "سلام علیرضا عزیز. بله حتماً، در حال اضافه کردن پشتیبانی تایم‌فریم هفتگی و ماهانه هستیم که تا چند روز آینده برای تمام کاربران فعال خواهد شد.",
+          "createdAt": 1789731276612
+        }
+      ]
+    },
+    {
+      "id": "ticket_202",
+      "userId": "user_trader_2",
+      "userIdentifier": "09351112233",
+      "subject": "تایید واریزی اشتراک هفتگی",
+      "department": "مالی و اشتراک",
+      "status": "OPEN",
+      "createdAt": 1789806876612,
+      "updatedAt": 1789806876612,
+      "messages": [
+        {
+          "id": "msg_3",
+          "sender": "user",
+          "text": "سلام وقت بخیر، مبلغ اشتراک هفتگی رو از طریق کارت به کارت واریز کردم و فیشش رو ثبت کردم، لطفاً بررسیش بفرمایید. ممنون.",
+          "createdAt": 1789806876612
+        }
+      ]
+    }
+  ],
+  "searches": [
+    {
+      "id": "srch_1789818084795_vglj",
+      "userId": "user_1789558128332_up105",
+      "userIdentifier": "09214046903",
+      "query": "LITECOIN (LTC)",
+      "timestamp": 1789818084795
+    },
+    {
+      "id": "srch_1789818049730_9oln",
+      "userId": "user_1789558128332_up105",
+      "userIdentifier": "09214046903",
+      "query": "ETHEREUM (ETH)",
+      "timestamp": 1789818049730
+    },
+    {
+      "id": "srch_1789817756914_asuy",
+      "userId": "user_1789558128332_up105",
+      "userIdentifier": "09214046903",
+      "query": "ARTIFICIAL SUPERINTELLIGENCE ALLIANCE (FET)",
+      "timestamp": 1789817756914
+    },
+    {
+      "id": "srch_1",
+      "userId": "user_admin_hamed",
+      "userIdentifier": "hamed.farri@gmail.com",
+      "query": "BTC",
+      "timestamp": 1789817666612
+    },
+    {
+      "id": "srch_2",
+      "userId": "user_trader_1",
+      "userIdentifier": "09198765432",
+      "query": "SOL",
+      "timestamp": 1789817626612
+    },
+    {
+      "id": "srch_3",
+      "userId": "user_trader_2",
+      "userIdentifier": "09351112233",
+      "query": "RENDER",
+      "timestamp": 1789817556612
+    },
+    {
+      "id": "srch_4",
+      "userIdentifier": "کاربر مهمان",
+      "query": "ETH",
+      "timestamp": 1789817376612
+    },
+    {
+      "id": "srch_5",
+      "userIdentifier": "کاربر مهمان",
+      "query": "SUI",
+      "timestamp": 1789817076612
+    }
+  ],
+  "withdrawals": [
+    {
+      "id": "wth_101",
+      "userId": "user_admin_hamed",
+      "userIdentifier": "hamed.farri@gmail.com",
+      "amountUsdt": 50,
+      "bep20Address": "0x71C836e4f3AbC822295E4F28f7dF7B9889617277",
+      "status": "COMPLETED",
+      "txHash": "0x89ab12cd34ef567890123456789abcdef0123456789abcdef0123456789abcde",
+      "createdAt": 1788521676612,
+      "reviewedAt": 1788528876612,
+      "adminNote": "واریز موفق به شبکه BSC (BEP20)"
+    },
+    {
+      "id": "wth_102",
+      "userId": "user_admin_hamed",
+      "userIdentifier": "hamed.farri@gmail.com",
+      "amountUsdt": 32.5,
+      "bep20Address": "0x71C836e4f3AbC822295E4F28f7dF7B9889617277",
+      "status": "PENDING",
+      "createdAt": 1789796076612
+    }
+  ],
+  "admin2faCodes": [
+    {
+      "id": "2fa_1789820121529_ag1x",
+      "adminEmail": "hamed.farri@gmail.com",
+      "code": "181608",
+      "expiresAt": 1789820421529,
+      "attempts": 1,
+      "isUsed": true,
+      "createdAt": 1789820121529,
+      "ip": "127.0.0.1"
+    },
+    {
+      "id": "2fa_1790927069395_9baa927e",
+      "adminEmail": "hamed.farri@gmail.com",
+      "code": "197469",
+      "expiresAt": 1790927369395,
+      "attempts": 0,
+      "isUsed": false,
+      "createdAt": 1790927069395,
+      "ip": "127.0.0.1"
+    },
+    {
+      "id": "2fa_1790927305100_c753b98e",
+      "adminEmail": "hamed.farri@gmail.com",
+      "code": "607548",
+      "expiresAt": 1790927605100,
+      "attempts": 1,
+      "isUsed": true,
+      "createdAt": 1790927305100,
+      "ip": "127.0.0.1"
+    }
+  ],
+  "technicalAnalyses": [],
+  "fundamentalAnalyses": [],
+  "fearAndGreedRecords": [],
+  "exchangePartners": [],
+  "auditLogs": [
+    {
+      "id": "audit_1790927320562_ca1e64",
+      "action": "TOTP_BACKUP_CODE_USED",
+      "actor": "SUPER_ADMIN",
+      "details": "یک کد بازیابی اضطراری TOTP مصرف گردید.",
+      "timestamp": 1790927320563,
+      "ip": "127.0.0.1"
+    },
+    {
+      "id": "audit_1790927315703_d59ab5",
+      "action": "TOTP_2FA_ACTIVATED",
+      "actor": "SUPER_ADMIN",
+      "details": "احراز هویت دو مرحله‌ای سخت‌افزاری/اپلیکیشنی (TOTP) فعال شد.",
+      "timestamp": 1790927315703,
+      "ip": "127.0.0.1"
+    },
+    {
+      "id": "audit_1790927308050_c02b70",
+      "action": "ADMIN_2FA_VERIFIED_SUCCESS",
+      "actor": "hamed.farri@gmail.com",
+      "details": "ورود دو مرحله‌ای مدیر ارشد با موفقیت تایید شد.",
+      "timestamp": 1790927308050,
+      "ip": "127.0.0.1"
+    },
+    {
+      "id": "audit_1790927305101_04fb83",
+      "action": "ADMIN_2FA_CODE_GENERATED",
+      "actor": "hamed.farri@gmail.com",
+      "details": "کد تایید دو مرحله‌ای جدید به مدت ۵ دقیقه صادر شد.",
+      "timestamp": 1790927305101,
+      "ip": "127.0.0.1"
+    },
+    {
+      "id": "audit_1790927069395_dd7327",
+      "action": "ADMIN_2FA_CODE_GENERATED",
+      "actor": "hamed.farri@gmail.com",
+      "details": "کد تایید دو مرحله‌ای جدید به مدت ۵ دقیقه صادر شد.",
+      "timestamp": 1790927069396,
+      "ip": "127.0.0.1"
+    },
+    {
+      "id": "audit_1789820124918_izc",
+      "action": "ADMIN_2FA_VERIFIED_SUCCESS",
+      "actor": "hamed.farri@gmail.com",
+      "details": "ورود دو مرحله‌ای موفق مدیر ارشد با اعتبارسنجی کد ایمیل",
+      "timestamp": 1789820124918,
+      "ip": "127.0.0.1"
+    },
+    {
+      "id": "audit_1789820121529_e70",
+      "action": "ADMIN_2FA_CODE_DISPATCHED",
+      "actor": "hamed.farri@gmail.com",
+      "details": "کد تایید ۶ رقمی امنیتی برای ایمیل مدیر ارسال شد. انقضا: ۵ دقیقه",
+      "timestamp": 1789820121529,
+      "ip": "127.0.0.1"
+    }
+  ],
+  "watchlists": [],
+  "systemSettings": {
+    "id": "global_settings_default",
+    "platformName": "تحلیل‌گر هوشمند رمزارز و نمودار تومانی نوبیتکس",
+    "adminEmail": "hamed.farri@gmail.com",
+    "admin2faRequired": true,
+    "dailyFreeAnalysisLimit": 3,
+    "maintenanceMode": false,
+    "announcementText": "سامانه امنیتی دو مرحله‌ای ورود مدیر و پایگاه داده جامع ابری فعال گردید.",
+    "announcementActive": true,
+    "contactEmail": "hamed.farri@gmail.com",
+    "supportPhone": "+98 912 123 4567",
+    "updatedAt": 1789820116479,
+    "totpEnabled": true,
+    "totpSecret": "VQ57XU4E2TQIORBWXPDGDMSQ62SL44XI",
+    "totpBackupCodes": [
+      "CA27-8048",
+      "C571-797C",
+      "7DC5-B562",
+      "378D-3742",
+      "43A0-8594",
+      "8ADC-7FB4",
+      "4ED8-A5F5"
+    ],
+    "totpActivatedAt": 1790927315703
+  },
+  "sessions": [
+    {
+      "token": "b4cc99e095fa67157f462313fde9d50e472d9b38ae20a5b532c06ce0d525a7cb",
+      "userId": "user_admin_hamed",
+      "role": "ADMIN",
+      "pending2fa": false,
+      "createdAt": 1790927308049,
+      "expiresAt": 1791013708049,
+      "ip": "127.0.0.1"
+    }
+  ],
+  "notifications": [],
+  "vipPlans": [
+    {
+      "id": "weekly",
+      "nameFa": "هفتگی (۷ روزه)",
+      "nameEn": "Weekly (7 Days)",
+      "priceUsdt": 1,
+      "durationDays": 7,
+      "badgeFa": "پایه و اقتصادی",
+      "badgeEn": "Starter",
+      "savingsFa": "تست و بررسی امکانات"
+    },
+    {
+      "id": "monthly",
+      "nameFa": "ماهانه (۳۰ روزه)",
+      "nameEn": "Monthly (30 Days)",
+      "priceUsdt": 3.5,
+      "durationDays": 30,
+      "badgeFa": "محبوب‌ترین انتخاب",
+      "badgeEn": "Most Popular",
+      "savingsFa": "صرفه‌جویی ۱۲٪ نسبت به هفتگی"
+    },
+    {
+      "id": "quarterly",
+      "nameFa": "سه ماهه (۹۰ روزه)",
+      "nameEn": "Quarterly (3 Months)",
+      "priceUsdt": 9,
+      "durationDays": 90,
+      "badgeFa": "پیشنهاد تریدرها",
+      "badgeEn": "Recommended",
+      "savingsFa": "صرفه‌جویی ۲۵٪ نسبت به ماهانه"
+    },
+    {
+      "id": "semi_annual",
+      "nameFa": "شش ماهه (۱۸۰ روزه)",
+      "nameEn": "Semi-Annual (6 Months)",
+      "priceUsdt": 15,
+      "durationDays": 180,
+      "badgeFa": "ارزش فوق‌العاده",
+      "badgeEn": "Great Value",
+      "savingsFa": "صرفه‌جویی ۳۰٪ نسبت به پلن ۳ ماهه"
+    },
+    {
+      "id": "annual",
+      "nameFa": "یک ساله (۳۶۵ روزه)",
+      "nameEn": "Annual (1 Year)",
+      "priceUsdt": 25,
+      "durationDays": 365,
+      "badgeFa": "حداکثر تخفیف و بازدهی",
+      "badgeEn": "Best Savings",
+      "savingsFa": "بیشترین صرفه‌جویی اقتصادی (۴۰٪+)"
+    }
+  ]
+}

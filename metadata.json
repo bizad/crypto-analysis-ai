@@ -1,0 +1,6 @@
+{
+  "name": "Crypto Technical Analysis & AI Trading Bot",
+  "description": "پلتفرم پیشرفته تحلیل تکنیکال و فاندامنتال ارزهای دیجیتال طراحی و توسعه‌یافته توسط حامد فرّی با داده‌های لحظه‌ای APIهای معتبر جهانی و هوش مصنوعی",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
